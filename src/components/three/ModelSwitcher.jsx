@@ -49,24 +49,22 @@ const ModelSwitcher = ({ scale, isMobile}) => {
 }, [scale])
   const controlsConfig = {
     snap: true,
-    speed: 1,
+    speed: 1.2,
     zoom: 1,
-    azimuth: [-Infinity, Infinity],
-    config: { mass: 1, tension: 0, friction: 26}
+    azimuth: [-Math.PI / 3, Math.PI / 3],
+    polar: [-Math.PI / 6, Math.PI / 2.5],
+    config: { mass: 1, tension: 120, friction: 26 },
   }
 
   return (
     <>
         <PresentationControls {...controlsConfig}>
-            <group ref={(largeMacbook)}>
-                <MacBookModel16 scale={isMobile ? 0.05 : 0.08}/>
-            </group>
-        </PresentationControls>
-        <PresentationControls {...controlsConfig}>
-            <group ref={(smallMacbook)}>
-                <MacbookModel14 scale={isMobile ? 0.03 : 0.06}/>
-            </group>
-        </PresentationControls>
+      {showLargeMacbook ? (
+        <MacBookModel16 scale={isMobile ? 0.05 : 0.08} />
+      ) : (
+        <MacbookModel14 scale={isMobile ? 0.03 : 0.06} />
+      )}
+    </PresentationControls>
     </>
   )
 }

@@ -10,10 +10,13 @@ const ProductViewer = () => {
   const { color, setColor, scale, setScale } = useMacbookStore();
   const isMobile = useMediaQuery({ query: '(max-width: 1024px)' });
   return (
-      <section id='product-viewer'>
+      <section
+  id="product-viewer"
+  className="pb-25"
+>
         <h2>Take a closer look.</h2>
 
-        <div className='controls'>
+        <div className='controls flex flex-col gap-3 mt-12'>
             <p className='info'>MacbookPro | Available in 14" & 16" in Space Grey & Midnight colors</p>
             <div className='flex-center mt-5 gap-5'>
                 <div className='color-control'>
