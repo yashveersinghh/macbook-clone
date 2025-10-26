@@ -29,7 +29,7 @@ It recreates Apple’s smooth animations, 3D MacBook model, and minimal design s
 ## ⚙️ Installation
 
 ```bash
-git clone https://github.com/yourusername/macbook-clone.git
+git clone https://github.com/yashveersinghh/macbook-clone.git
 cd macbook-clone
 npm install
 npm run dev
