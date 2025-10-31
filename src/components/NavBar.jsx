@@ -3,7 +3,7 @@ import { navLinks } from '../constants'
 const NavBar = () => {
   return (
     <header>
-        <nav className='flex items-center justify-between w-full max-w-7xl mx-auto px-10'>
+        <nav className='flex items-center justify-between w-full max-w-7xl mx-auto'>
             <img src="/logo.svg" alt="Apple logo" className='w-5 h-5 brightness-75 hover:brightness-200 transition-all duration-200' />
 
             <ul className='flex-1 justify-center hidden sm:flex items-center gap-5 ml-10 list-none'>
