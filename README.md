@@ -1,5 +1,9 @@
 # 💻 MacBook Website Clone
 
+## 🖼️ Screenshot
+
+![Website Screenshot](./assets/screenshot)
+
 This is a **MacBook website clone** built using **React**, **Three.js**, **GSAP**, and **Zustand**.  
 It recreates Apple’s smooth animations, 3D MacBook model, and minimal design style.
 
