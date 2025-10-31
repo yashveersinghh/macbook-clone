@@ -49,4 +49,4 @@ npm run dev
 
 ## 🌐 Live Demo
 
-[Click here to view the site]()
+[Click here to view the site](https://macbook-clone-ten.vercel.app/)
